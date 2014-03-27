@@ -1,0 +1,60 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+#tn-form{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#333333;
+	padding:20px;
+}
+.input{
+	width:400px;
+	padding:7px;
+	border:solid 1px #999999;
+	color:#333333;
+}
+.button{
+	border:solid 1px #999999;
+	padding:3px;
+}
+
+
+#messagebox{
+	position:absolute;
+	display:none;
+	width:20%;
+	margin-left:40%;
+	top:100px;
+	padding:5px;
+	background-color:#4D4D4D;
+	color:#fff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:.8em;
+	letter-spacing:3px;
+	border:solid 2px #4D4D4D;
+}
+
+#close-messagebox{
+	font-size:.75em;
+	text-align:right;
+	background-color:#A39D87;
+}
+#close-messagebox a{
+	text-decoration:none;
+	color:#fff;
+}
+.title{
+	display:block;
+	width:200px;
+	clear:both;
+}
+
+
+__________ Information from ESET Smart Security, version of virus signature database 4588 (20091109) __________
+
+The message was checked by ESET Smart Security.
+
+http://www.eset.com
+
+
+

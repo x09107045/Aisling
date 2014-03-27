@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>jQuery Background Test</title>
+<link rel="stylesheet" type="text/css" href="css/main-layout.css" />
+<script type="text/javascript" src="js/jquery-1.3.1.js"></script>
+<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+<script type="text/javascript" src="js/divsize.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	$('#nav a')
+		.css( {backgroundPosition: "0 0"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(-150px 0)"}, {duration:500})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(-300px 0)"}, {duration:200, complete:function(){
+				$(this).css({backgroundPosition: "0 0"})
+			}})
+		})
+
+});
+</script>
+
+</head>
+<body>
+<div id="header">
+	<img src="images/logo_big.gif" alt="logo.gif"/>
+</div>
+<div id="header-navigation">
+	<ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipe 1</a></li>
+        <li><a href="#">Recipe 2</a></li>
+        <li><a href="#">Recipe 3</a></li>
+        <li><a href="#">Recipe 4</a></li>
+        <li><a href="#">Recipe 5</a></li>
+        <li><a href="#">Contact</a></li>
+	</ul>
+
+</div>
+<div id="recipe-content-container">
+
+	<div id="main-area">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Phasellus odio tortor, scelerisque sit amet luctus eu, tincidunt non metus. Ut id augue sit amet orci aliquam blandit. 
+        Nunc ipsum eros, semper ac congue nec, convallis ut massa. Suspendisse et leo elit, ullamcorper blandit felis. 
+        Nulla erat sem, fermentum vel volutpat ut, pellentesque ac lectus. Fusce elementum ipsum et urna venenatis congue.
+        Nunc at commodo sem. Pellentesque vitae gravida nulla. Quisque aliquet nisl vitae neque imperdiet a vulputate ante 
+        vestibulum. Praesent tortor ipsum, rutrum at congue ut, congue ac arcu. 
+        Aliquam sodales tincidunt mi, et elementum arcu tristique vel. Donec euismod eleifend pharetra. 
+        Sed non quam nec nisi rutrum consequat ut sed velit. Nullam pharetra dignissim nulla, placerat hendrerit orci congue at.
+     </p>
+     <p>   
+        Integer vitae consequat nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        Integer ut mi leo, non convallis tortor. Nulla sagittis urna eu nulla gravida fringilla in a nibh. 
+        Suspendisse et lorem sed leo euismod volutpat. Ut non convallis felis. Sed scelerisque sodales gravida.
+        Ut malesuada, nisi vel auctor ullamcorper, ligula dui aliquet mi, sed tempus justo arcu a turpis. 
+        Sed dignissim scelerisque est eget venenatis. Aliquam erat volutpat. Vestibulum ante ipsum primis
+        in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ornare sapien vitae risus iaculis lacinia.
+      </p>
+     <p>       
+        Integer interdum nibh non lorem dignissim cursus. Vivamus quis molestie augue. Phasellus id urna ornare
+        turpis dignissim gravida. Aenean turpis mauris, blandit at porttitor eget, lacinia sit amet justo. 
+        Praesent facilisis quam iaculis libero fermentum adipiscing. Praesent vel viverra leo. In eleifend libero 
+        ac enim pretium ultrices. Donec rhoncus mauris ultricies justo bibendum consectetur luctus enim auctor.
+        Vestibulum mauris neque, venenatis nec vehicula quis, tincidunt nec lacus. Aliquam dapibus hendrerit velit.
+        Pellentesque ornare volutpat est, id euismod enim euismod a. Etiam dui lorem, bibendum non placerat posuere, 
+        elementum vel metus. Phasellus sagittis sollicitudin diam eu condimentum. Duis rutrum tincidunt mollis. 
+        Sed pretium nunc ut lectus fermentum ornare.
+     </p>
+
+
+	</div>
+    <div id="right-container">
+    &nbsp;
+    </div>
+</div>
+
+
+</body>
+</html>

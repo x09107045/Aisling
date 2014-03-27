@@ -1,0 +1,81 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+
+}
+
+#header{
+	display:block;
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
+#header-navigation{
+	display:block;
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+
+	font-family:Arial, Helvetica, sans-serif;
+}
+#header-navigation ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#header-navigation li {
+	float:left;
+	width:100px;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+#header-navigation li a {
+	display:block;
+	padding:5px 10px;
+	height:100%;
+	color:#FFF;
+	text-decoration:none;
+	border-right:1px solid #FFF;
+}
+#header-navigation li a {
+	background:url(../images/bg2.jpg) repeat 0 0;
+}
+#header-navigation li a:hover, li a:focus, li a:active {
+	background-position:-150px 0;}
+#header-navigation a {
+	background:url(../images/bg2.jpg) repeat 0 0;
+}
+
+
+#recipe-content-container{
+	display:block;
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:80px;
+	color:#666666;
+
+}
+
+#main-area{
+	width:450px;
+	display:block;
+	float:left;
+	clear:none;
+	padding: 20px 20px 20px  10px;
+	font-size:.8em;
+	text-align:justify;
+	border:solid 1px #CCCCCC;
+}
+#right-container{
+	display:block;
+	border:solid 1px #CCCCCC;
+	width:190px;
+	float:left;
+	margin-left:20px;
+
+}

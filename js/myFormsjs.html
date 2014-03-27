@@ -1,0 +1,57 @@
+function formSetup(){
+	var x = $("#firstname").focus();
+}
+function createAlert(text){
+	$("<div id='messagebox'><p>" + text +
+"</p></div>").appendTo("body");
+	$("#close-messagebox").remove();
+	$("<div id='close-messagebox'><a href='#' id='closeme'
+onclick='closeMe()'>close</a></div>").appendTo("#messagebox");
+	$("#messagebox").fadeIn("slow");
+	$("#closeme").focus();
+}
+function closeMe(){
+	$("#messagebox").fadeOut("slow");
+	$("#close-messagebox").remove();
+	$("#messagebox").remove();
+}
+function validateForm(){
+	var str = "";
+	var returnType = false;
+	var count = 0;
+	if($("#firstname").val() == ""){
+		str += "<p>please enter a firstname</p>";
+		count++;
+	}
+	if($("#surname").val() == ""){
+		str += "<p>please enter a surname</p>";
+		count++;
+	}
+	if($("#phone").val() == ""){
+		str += "<p>please enter a phone number</p>";
+		count++;
+	}
+	if($("#email").val() == ""){
+		str += "<p>please enter an email address</p>";
+		count++;
+	}
+	if($("#comment").val() == ""){
+		str += "<p>please enter a comment</p>";
+		count++;
+	}
+	if(count == 0){
+		returnType = true;
+	}else{
+		createAlert(str);
+	}
+	return returnType;
+}
+
+
+__________ Information from ESET Smart Security, version of virus signature database 4588 (20091109) __________
+
+The message was checked by ESET Smart Security.
+
+http://www.eset.com
+
+
